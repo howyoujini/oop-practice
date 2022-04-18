@@ -1,12 +1,18 @@
 class Vehicle {
     protected int speed = 3;
 
-    public int getSpeed() {
-        return speed;
+    public double getSpeed() { // Getter 메소드
+        double recommendedSpeed = speed * 0.8;
+        return recommendedSpeed;
     }
 
-    public void setSpeed(int speed) {
-        this.speed = speed;
+    public void setSpeed(int speed) { // Setter 메소드
+        if (speed < 0) {
+            this.speed = 0;
+            return;
+        } else {
+            this.speed = speed;
+        }
     }
 }
 
@@ -19,10 +25,10 @@ class Car extends Vehicle {
 
 class ExtendsSample {
     public static void main(String[] args) {
-        Car A = new Car();
+        Car Tivoli = new Car();
 
-        System.out.println(A.getSpeed());
+        System.out.println(Tivoli.getSpeed());
 
-        A.printSpeed();
+        Tivoli.printSpeed();
     }
 }
