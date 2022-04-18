@@ -1,7 +1,7 @@
 
 public class test {
     public int 가격 = 0;
-    public String 이름 = "";
+    public String 이름 = "감자";
 
     test(int 가격, String 이름) {
         this.가격 = 가격;

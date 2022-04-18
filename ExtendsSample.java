@@ -23,7 +23,7 @@ class Car extends Vehicle {
 
 }
 
-class ExtendsSample {
+public class ExtendsSample {
     public static void main(String[] args) {
         Car Tivoli = new Car();
 
