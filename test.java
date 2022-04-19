@@ -23,4 +23,4 @@ public class test {
     public int getPrice() {
         return this.가격;
     }
-};
+};ㄴ

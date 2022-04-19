@@ -1,12 +1,12 @@
 class Vehicle {
     protected int speed = 3;
 
-    public double getSpeed() { // Getter 메소드
+    public double getSpeed() {
         double recommendedSpeed = speed * 0.8;
         return recommendedSpeed;
     }
 
-    public void setSpeed(int speed) { // Setter 메소드
+    public void setSpeed(int speed) {
         if (speed < 0) {
             this.speed = 0;
             return;
