@@ -1,0 +1,20 @@
+= 2022년 oop-practice 모음
+// Metadata:
+:description: study
+:keywords: extends
+// Settings:
+:doctype: book
+:toc: left
+:toclevels: 4
+:sectlinks:
+:icons: font
+
+[[section-20220419]]
+== 2022년 4월 19일 화요일
+
+==== 학습목표 
+1. java의 장단점
+
+
+연산자 오버로딩 이란?::
+oop에서 다형성의 특정 경우로 다른 연산자들이 함수 인자를 통해서 구현할 때를 말함.
