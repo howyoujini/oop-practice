@@ -1,3 +1,5 @@
+// MVC 패턴을 알아보자.
+
 let view = {
 	displayMessage: function (message) {
 		let messageArea = document.getElementById('messageArea');

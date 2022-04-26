@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>클릭수 체크</title>
+    <style>
+        body, button{
+            margin: 20px;
+            padding: 10px;
+            font-size: 24px;
+        }
+        div{
+            padding: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <button id="clickHere">Click!</button>
+    <div id="message"></div>
+    <script>
+        // 클로저를 사용하지 않는 코드
+        // let count = 0;
+
+        // window.onload = function(){
+        //     let button = document.getElementById("clickHere");
+        //     button.onclick = handleClick;
+        // }
+
+        // function handleClick(){
+        //     let div = document.getElementById("message");
+
+        //     count++;
+        //     div.innerHTML = "나를 " + count + "번 클릭했습니다."
+        // }
+
+        //----------- 클로저를 사용한 코드
+         window.onload = function () {
+            let count = 0;
+            let div = document.getElementById("message"); // div 변수는 객체를 담고 있다.
+            // window.onload에서 div 변수를 초기화할 때 이미 클로저로 가지고 있으니까 다시 DOM에서 가져올 필요가 없다. ==> 코드가 조금 더 빨라진다.
+            
+            let button = document.getElementById("clickHere");
+            button.onclick = function(){
+                count++;
+                div.innerHTML = "나를 " + count + "번 클릭했습니다.";
+            };
+        };
+    </script>
+</body>
+</html>
