@@ -65,10 +65,10 @@ const switty2Params = {
 
 const switty2 = new DogParams(switty2Params);
 
-// js의 내장객체 :
-Object();
-Math();
-RegExp();
-Error();
-Array();
-Date();
+// js의 내장객체
+// Object();
+// Math();
+// RegExp();
+// Error();
+// Array();
+// Date();
