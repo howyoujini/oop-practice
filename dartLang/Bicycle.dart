@@ -19,10 +19,3 @@ class Bicycle {
   String toString() => 'Bicycle: $_speed mph';
 }
 
-void _incfreaseCount = ( ) => {
-  
-  setState( ( ) => {
-      _counter++
-    }
-  );
-}
